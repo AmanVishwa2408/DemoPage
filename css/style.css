@@ -88,7 +88,7 @@ html{
 
 #home::before {
 	content: "";
-	background: url('../img/bg2.jpg')no-repeat center center/cover ;	
+	background: url('../bg2.jpg')no-repeat center center/cover ;	
 		/*center/cover means cover whole area */
 	position: absolute;
 	height: 74%;
@@ -175,7 +175,7 @@ html{
 }
 #client-section::before {
 	content: "";
-	background: url('../img/bg4.jpg')no-repeat center center/cover ;	
+	background: url('../bg4.jpg')no-repeat center center/cover ;	
 		/*center/cover means cover whole area */
 	position: absolute;
 	height: 34%;
@@ -191,7 +191,7 @@ html{
 
 #contact::before {
 	content: "";
-	background: url('../img/cc3.jpg')no-repeat center center/cover ;	
+	background: url('../cc3.jpg')no-repeat center center/cover ;	
 		/*center/cover means cover whole area */
 	position: absolute;
 	height: 100%;
