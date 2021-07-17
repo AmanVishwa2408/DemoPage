@@ -1,0 +1,234 @@
+/* */
+
+						/* CSS RESET*/
+*{
+	margin: 0;
+	padding: 0;
+}
+
+						/*if there is scroll in your page so add this */
+html{
+	scroll-behavior: smooth;
+}
+
+						/* CSS variables */
+:root{
+	--navbar-height : 59px;
+}
+						
+						/* Navbar*/
+#navbar{
+	  	position: sticky;
+   	 	top: 0px;
+		display: flex;
+		align-items: center;		/*item(img/li) contain only used area */
+	
+}
+
+#navbar ul{
+	display: flex;	/* display in horizontal way*/
+}
+
+#navbar::before{
+	content: "";
+	background-color: black;
+	position: absolute;
+	height: 60%;
+    width: 101%;
+	z-index: -1;		/* go inside the text */	
+	opacity: 0.5;		/* bgcolor have use 50% means gray*/
+	top: 0px;
+	left: 0px; 
+	
+}
+#navbar ul li{
+	list-style: none;	/* remove the point which in the form of listed*/
+	
+}
+
+#navbar ul li a{	
+	font-family: 'Baloo Tammudu 2', cursive;
+	color: white;
+    text-decoration: none;		/* remove the underlines */
+    padding: 17px 31px;
+    border-radius: 4px;
+    display: block;
+    margin: -48px 7px;
+}
+#navbar ul li a:hover{
+	color: black;
+	background: white;
+	padding: 0px 15px;
+   	margin: -32px 10px;
+    height: 30px;
+    
+}
+						/* Logo */
+
+#logo{
+	margin: 42px 21px;
+}
+
+#logo img{
+	    height: 45px;
+    	margin: -40px -3px;
+}
+
+
+							/* home*/
+
+#home{
+	display: flex;				/* convert all contain into one line */
+	flex-direction: column;		/* divide it into column wise */
+	padding: 3px 200px;	
+	justify-content: center;	/*whole contain center */
+	align-items: center;		/*center the item */
+	height: 381px;
+}
+
+#home::before {
+	content: "";
+	background: url('../img/bg2.jpg')no-repeat center center/cover ;	
+		/*center/cover means cover whole area */
+	position: absolute;
+	height: 74%;
+	width: 101%;
+	z-index: -1;		/* go inside the text */	
+	opacity: 0.89;		/* bgcolor have use 50% means gray*/
+	top: 0px;
+	left: 0px; 
+}
+
+#home h1{
+	color: white;
+	text-align: center;
+	font-family: 'Mate SC', serif;
+	height: 168;
+}
+.h-primary{
+	
+	font-size: 3rem;
+	padding: 12px;
+}
+
+.h-secondary{
+	font-family: 'Mate SC', serif;
+	font-size: 2rem;
+	padding: 12px
+}
+
+#home p{
+	color: black;
+	text-align: center;
+	font-size:1.5rem; 
+}
+
+.btn{
+	padding: 7px 22px;
+    background-color: #ca73b0;
+    border-color: white;
+    color: white;
+    margin: 23px;
+    border-radius: 12px;
+    font-size: initial;
+}
+
+.center{
+	text-align: center;
+}
+
+#services{
+	margin: 34px;
+	display: flex;
+}
+
+#services .box{
+	border: 2px solid #c8453d;
+    margin: 3px 13px;
+    border-radius: 15px;
+    padding: 15px;
+    background-color: #e7a7c6;
+}
+#services .box img{
+	    height: 152px;
+   	 	margin: auto;		/* margin only work if display is block*/
+   	 	display: block;
+   	 	border-radius: 20px;
+}
+.client-item{
+	margin: 3px 11px;
+   
+   /* border: 2px solid #e4e18e;*/
+    
+}
+
+#clients{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 18px;
+}
+
+#clients img{
+	height: 90px;
+	border-radius: 23px;
+}
+#client-section::before {
+	content: "";
+	background: url('../img/bg4.jpg')no-repeat center center/cover ;	
+		/*center/cover means cover whole area */
+	position: absolute;
+	height: 34%;
+	width: 100%;
+	z-index: -1;		/* go inside the text */	
+	opacity: 0.89;		/* bgcolor have use 50% means gray*/
+	margin-bottom: 10px;
+}
+
+#contact{
+	position: relative;
+}
+
+#contact::before {
+	content: "";
+	background: url('../img/cc3.jpg')no-repeat center center/cover ;	
+		/*center/cover means cover whole area */
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	z-index: -1;		/* go inside the text */	
+	opacity: 0.5;		/* bgcolor have use 50% means gray*/
+	margin: 10px -2px;
+}
+#contact-box{
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	padding-bottom: 34px;
+}
+#contact-box input,
+#contact-box textarea{
+	width: 100%;
+	padding: 0.5rem;
+}
+#contact-box form{
+	width: 40%;
+}
+#contact-box label {
+	font-family: 'Baloo Tammudu 2', cursive;
+	font-size: 1.3rem;
+}
+
+.btn1{
+	display: flex;
+    padding: 15px 102px;
+    justify-content: center;
+    align-items: center;
+    height: 31px;
+    /* margin: 6px 83px;*/
+}
+footer{
+	background: black;
+	color: white;
+	padding: 4px 20px;
+}
